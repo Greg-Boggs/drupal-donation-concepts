@@ -96,7 +96,7 @@ section {
   padding: 100px 40px;
 }
 .eyebrow {
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0.13em;
   font-size: 0.76rem;
   font-weight: 700;
@@ -261,7 +261,7 @@ section {
   box-shadow: 14px 14px 0 #12285f44;
 }
 .stat-card > span {
-  text-transform: uppercase;
+  text-transform: none;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -320,7 +320,7 @@ section {
   max-width: 610px;
 }
 .evidence {
-  border-top: 1px solid #dce1ec;
+  border-top: 0;
 }
 .evidence-grid {
   margin-top: 50px;
@@ -440,7 +440,7 @@ td {
 }
 .role {
   font-size: 0.65rem;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0.07em;
   line-height: 1.6;
   min-height: 2.6em;
@@ -526,7 +526,7 @@ td {
   margin-top: 22px;
 }
 .results {
-  border-top: 1px solid #dce1ec;
+  border-top: 0;
 }
 .result-grid {
   display: grid;
@@ -595,7 +595,7 @@ td {
   display: inline-block;
   font-size: 0.65rem;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: none;
   background: var(--purple);
   padding: 5px 10px;
   border-radius: 4px;
@@ -769,7 +769,7 @@ details > p {
 }
 .concept-card span {
   font-size: 0.75rem;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0.1em;
 }
 .concept-card h2 {
@@ -1032,5 +1032,113 @@ details > p {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+}
+
+/* Campaign revisions: official identity, direct giving, and the whole team. */
+.site-header {
+  max-width: none;
+  background: var(--navy);
+  color: white;
+  padding-inline: max(40px, calc((100vw - 1160px) / 2));
+}
+.association-logo {
+  display: block;
+  width: 245px;
+  flex-shrink: 0;
+}
+.association-logo img {
+  width: 100%;
+  height: auto;
+}
+.site-header .button {
+  color: var(--navy);
+}
+.hero {
+  background:
+    linear-gradient(to bottom, transparent calc(100% - 55px), white),
+    linear-gradient(110deg, var(--navy) 14%, #006aa9 74%, var(--blue));
+  padding-top: 60px;
+  padding-bottom: 110px;
+}
+.stat-card > span {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.9rem;
+}
+.team-roster {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px 35px;
+}
+.team-roster li {
+  break-inside: avoid;
+}
+.team-roster a {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.team-roster span {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-top: 3px;
+  overflow-wrap: anywhere;
+}
+.team-roster p {
+  font-size: 0.9rem;
+}
+.provisional-team {
+  margin-top: 45px;
+}
+.provisional-team h3 {
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+}
+.provisional-team ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 35px;
+}
+.provisional-team a {
+  font-size: 0.94rem;
+}
+.tag {
+  font-size: 0.85rem;
+  letter-spacing: 0;
+}
+.chart table {
+  margin-top: 26px;
+}
+@media (max-width: 700px) {
+  .site-header {
+    padding: 18px 24px;
+  }
+  .association-logo {
+    width: 170px;
+  }
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 95px;
+  }
+  .team-roster {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 20px;
+  }
+  .team-roster a {
+    font-size: 0.94rem;
+  }
+  .provisional-team ul {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .site-header nav {
+    gap: 0;
   }
 }

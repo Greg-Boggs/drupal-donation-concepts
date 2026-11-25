@@ -1,0 +1,206 @@
+{
+  "sourceUrl": "https://www.drupal.org/drupal-security-team/security-team-members",
+  "verifiedAt": "2026-11-25",
+  "members": [
+    {
+      "id": "akalata",
+      "name": "Swan Kalata",
+      "handle": "akalata",
+      "profileUrl": "https://www.drupal.org/u/akalata"
+    },
+    {
+      "id": "alexpott",
+      "name": "Alex Pott",
+      "handle": "alexpott",
+      "profileUrl": "https://www.drupal.org/u/alexpott"
+    },
+    {
+      "id": "benjifisher",
+      "name": "Benji Fisher",
+      "handle": "benjifisher",
+      "profileUrl": "https://www.drupal.org/u/benjifisher"
+    },
+    {
+      "id": "bramdriesen",
+      "name": "Bram Driesen",
+      "handle": "bramdriesen",
+      "profileUrl": "https://www.drupal.org/u/bramdriesen"
+    },
+    {
+      "id": "catch",
+      "name": "catch",
+      "handle": "catch",
+      "profileUrl": "https://www.drupal.org/u/catch"
+    },
+    {
+      "id": "cilefen",
+      "name": "cilefen",
+      "handle": "cilefen",
+      "profileUrl": "https://www.drupal.org/u/cilefen"
+    },
+    {
+      "id": "damienmckenna",
+      "name": "Damien McKenna",
+      "handle": "damienmckenna",
+      "profileUrl": "https://www.drupal.org/u/damienmckenna"
+    },
+    {
+      "id": "david-strauss",
+      "name": "David Strauss",
+      "handle": "david strauss",
+      "profileUrl": "https://www.drupal.org/u/david-strauss"
+    },
+    {
+      "id": "dokumori",
+      "name": "Mori Sugimoto",
+      "handle": "dokumori",
+      "profileUrl": "https://www.drupal.org/u/dokumori"
+    },
+    {
+      "id": "drumm",
+      "name": "Neil Drumm",
+      "handle": "drumm",
+      "profileUrl": "https://www.drupal.org/u/drumm"
+    },
+    {
+      "id": "effulgentsia",
+      "name": "Alex Bronstein",
+      "handle": "effulgentsia",
+      "profileUrl": "https://www.drupal.org/u/effulgentsia"
+    },
+    {
+      "id": "galooph",
+      "name": "Dan Smith",
+      "handle": "galooph",
+      "profileUrl": "https://www.drupal.org/u/galooph"
+    },
+    {
+      "id": "greggles",
+      "name": "Greg Knaddison",
+      "handle": "greggles",
+      "profileUrl": "https://www.drupal.org/u/greggles"
+    },
+    {
+      "id": "heine",
+      "name": "Heine Deelstra",
+      "handle": "heine",
+      "profileUrl": "https://www.drupal.org/u/heine"
+    },
+    {
+      "id": "larowlan",
+      "name": "Lee Rowlands",
+      "handle": "larowlan",
+      "profileUrl": "https://www.drupal.org/u/larowlan"
+    },
+    {
+      "id": "longwave",
+      "name": "Dave Long",
+      "handle": "longwave",
+      "profileUrl": "https://www.drupal.org/u/longwave"
+    },
+    {
+      "id": "mcdruid",
+      "name": "Drew Webber",
+      "handle": "mcdruid",
+      "profileUrl": "https://www.drupal.org/u/mcdruid"
+    },
+    {
+      "id": "mlhess",
+      "name": "Michael Hess",
+      "handle": "mlhess",
+      "profileUrl": "https://www.drupal.org/u/mlhess"
+    },
+    {
+      "id": "moshe-weitzman",
+      "name": "Moshe Weitzman",
+      "handle": "moshe weitzman",
+      "profileUrl": "https://www.drupal.org/u/moshe-weitzman"
+    },
+    {
+      "id": "mrbaileys",
+      "name": "Ivo Van Geertruyen",
+      "handle": "mr.baileys",
+      "profileUrl": "https://www.drupal.org/u/mrbaileys"
+    },
+    {
+      "id": "neclimdul",
+      "name": "James Gilliland",
+      "handle": "neclimdul",
+      "profileUrl": "https://www.drupal.org/u/neclimdul"
+    },
+    {
+      "id": "pandaski",
+      "name": "Joseph Zhao",
+      "handle": "pandaski",
+      "profileUrl": "https://www.drupal.org/u/pandaski"
+    },
+    {
+      "id": "poker10",
+      "name": "Juraj Nemec",
+      "handle": "poker10",
+      "profileUrl": "https://www.drupal.org/u/poker10"
+    },
+    {
+      "id": "prudloff",
+      "name": "Pierre Rudloff",
+      "handle": "prudloff",
+      "profileUrl": "https://www.drupal.org/u/prudloff"
+    },
+    {
+      "id": "pwolanin",
+      "name": "Peter Wolanin",
+      "handle": "pwolanin",
+      "profileUrl": "https://www.drupal.org/u/pwolanin"
+    },
+    {
+      "id": "stella",
+      "name": "Stella Power",
+      "handle": "stella",
+      "profileUrl": "https://www.drupal.org/u/stella"
+    },
+    {
+      "id": "webchick",
+      "name": "Angie Byron",
+      "handle": "webchick",
+      "profileUrl": "https://www.drupal.org/u/webchick"
+    },
+    {
+      "id": "xjm",
+      "name": "Jess",
+      "handle": "xjm",
+      "profileUrl": "https://www.drupal.org/u/xjm"
+    },
+    {
+      "id": "yesct",
+      "name": "Cathy Theys",
+      "handle": "yesct",
+      "profileUrl": "https://www.drupal.org/u/yesct"
+    }
+  ],
+  "provisional": [
+    {
+      "name": "Jennifer Lea Lampton (jenlampton)",
+      "profileUrl": "https://www.drupal.org/u/jenlampton"
+    },
+    {
+      "name": "Vijayachandran Mani (vijaycs85)",
+      "profileUrl": "https://www.drupal.org/u/vijaycs85"
+    },
+    {
+      "name": "Mingsong Hu (mingsong)",
+      "profileUrl": "https://www.drupal.org/u/mingsong"
+    },
+    {
+      "name": "Ra Mänd (ram4nd)",
+      "profileUrl": "https://www.drupal.org/u/ram4nd"
+    },
+    {
+      "name": "Mohit Aghera (mohit_aghera)",
+      "profileUrl": "https://www.drupal.org/u/mohit_aghera"
+    },
+    {
+      "name": "Stephen Mustgrave (smustgrave)",
+      "profileUrl": "https://www.drupal.org/u/smustgrave"
+    }
+  ]
+}

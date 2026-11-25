@@ -1,34 +1,23 @@
 {
-  "xjm": {
-    "profileUrl": "https://www.drupal.org/u/xjm",
-    "downloadUrl": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-65776-1401232682.jpg?itok=9QDBtGl_",
-    "retrievedAt": "2026-11-25",
-    "license": "CC BY-SA 2.0 under Drupal.org content terms",
-    "changes": "Original downloaded image; CSS crop for display",
-    "note": "Chosen figurine avatar, not a photograph"
-  },
   "mcdruid": {
     "profileUrl": "https://www.drupal.org/u/mcdruid",
-    "downloadUrl": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-255969-1490256662.jpg?itok=ISSgaxPF",
+    "downloadUrl": "https://www.drupal.org/files/user-pictures/picture-255969-1490256662.jpg",
     "retrievedAt": "2026-11-25",
     "license": "CC BY-SA 2.0 under Drupal.org content terms",
-    "changes": "Original downloaded image; CSS crop for display",
-    "note": "Photographic profile portrait"
+    "changes": "Original full-resolution file; display crops use CSS"
   },
   "greggles": {
     "profileUrl": "https://www.drupal.org/u/greggles",
-    "downloadUrl": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-36762-1573249949.jpg?itok=qiZUlgqt",
+    "downloadUrl": "https://www.drupal.org/files/user-pictures/picture-36762-1573249949.jpg",
     "retrievedAt": "2026-11-25",
     "license": "CC BY-SA 2.0 under Drupal.org content terms",
-    "changes": "Original downloaded image; CSS crop for display",
-    "note": "Photographic profile portrait"
+    "changes": "Original full-resolution file; display crops use CSS"
   },
   "mlhess": {
     "profileUrl": "https://www.drupal.org/u/mlhess",
-    "downloadUrl": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-102818-1414863936.jpg?itok=9iZOBhYw",
+    "downloadUrl": "https://www.drupal.org/files/user-pictures/picture-102818-1414863936.jpg",
     "retrievedAt": "2026-11-25",
     "license": "CC BY-SA 2.0 under Drupal.org content terms",
-    "changes": "Original downloaded image; CSS crop for display",
-    "note": "Photographic profile portrait"
+    "changes": "Original full-resolution file; display crops use CSS"
   }
 }

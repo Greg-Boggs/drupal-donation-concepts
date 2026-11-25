@@ -28,6 +28,7 @@ export const people = [
       ["xjm", "vardot", "roster"],
     ),
     supportUrl: "https://www.patreon.com/xjm",
+    portrait: undefined,
     historicalFunding: {
       hours: 8,
       previousHours: 40,
