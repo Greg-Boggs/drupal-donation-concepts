@@ -68,3 +68,7 @@ Preserved the three overlapping portraits beneath the hero statistic. Removed up
 The people hero now names xjm and links directly to her Patreon, without using her image. Both campaign pages place the xjm funding story immediately after the hero, then the countdown and fund donation section, followed by the workload and evidence. The full roster is linked rather than displayed. Removed diagonal arrow decorations from all pages and replaced the hero fade with a sharp, shallow V edge. The original three overlapping portraits on the security page remain unchanged.
 
 Eight tests, build, and generated-site checks passed. At a 320 CSS pixel viewport the people page had no horizontal overflow; axe reported zero violations across WCAG 2 A/AA and 2.1 AA tags. Viewport override was reset.
+
+### Campaign-recipient correction
+
+The people page’s header and hero donation actions both lead to the Drupal Association security fund. xjm remains named in the hero and her funding section stays directly below it. Her Patreon is a separate, secondary support option in that section. This corrects the previous revision’s mistaken shift of the primary recipient. Eight tests, build, and site checks passed after restoring the fund CTA.
