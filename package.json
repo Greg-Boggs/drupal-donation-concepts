@@ -1,21 +1,22 @@
 {
- "name": "drupal-security-campaign-concepts",
- "version": "1.0.0",
- "private": true,
- "type": "module",
- "engines": {
-  "node": ">=22"
- },
- "scripts": {
-  "build": "eleventy",
-  "dev": "eleventy --serve --port=8080",
-  "test": "node tests/run.js",
-  "check": "node scripts/check-site.js"
- },
- "devDependencies": {
-  "@11ty/eleventy": "3.1.8"
- },
- "dependencies": {
-  "temporal-polyfill": "1.0.8"
- }
+  "name": "drupal-security-campaign-concepts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve --port=8080",
+    "test": "node tests/run.js",
+    "check": "node scripts/check-site.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.8",
+    "axe-core": "4.14.1"
+  },
+  "dependencies": {
+    "temporal-polyfill": "1.0.8"
+  }
 }
