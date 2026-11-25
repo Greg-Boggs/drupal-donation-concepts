@@ -1377,3 +1377,29 @@ details > p {
     font-size: 0.9rem;
   }
 }
+
+.deadline-review {
+  grid-column: 1 / -1;
+  border-top: 1px solid #c8d2e3;
+  padding-top: 32px;
+}
+.deadline-review h3 {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+.deadline-review > p {
+  max-width: 76ch;
+}
+.deadline-review ul {
+  padding-left: 22px;
+  margin-block: 24px;
+}
+.deadline-review li {
+  padding-left: 6px;
+  margin-bottom: 18px;
+}
+.deadline-review-close {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
