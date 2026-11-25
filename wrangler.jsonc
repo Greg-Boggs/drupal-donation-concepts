@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Static-assets-only Worker: Eleventy builds to _site/, Wrangler uploads it.
+  // Name must match the Worker already created in the Cloudflare dashboard.
+  "name": "drupal-donation-concepts",
+  "compatibility_date": "2026-11-25",
+  "assets": {
+    "directory": "./_site",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}

@@ -10,11 +10,14 @@
     "build": "eleventy",
     "dev": "eleventy --serve --port=8080",
     "test": "node tests/run.js",
-    "check": "node scripts/check-site.js"
+    "check": "node scripts/check-site.js",
+    "deploy": "npm run build && npm run check && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.8",
-    "axe-core": "4.14.1"
+    "axe-core": "4.14.1",
+    "wrangler": "^4.168.0"
   },
   "dependencies": {
     "temporal-polyfill": "1.0.8"

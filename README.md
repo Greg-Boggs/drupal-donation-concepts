@@ -21,15 +21,16 @@ npm run check
 
 Eleventy writes the static site to `_site/`. `npm run check` checks internal links, fragments, assets, routes, and campaign consistency in the generated output. The tests exercise source references, missing-image rendering, shared metrics, campaign validation, progress provenance, and countdown boundaries.
 
-## Cloudflare Pages
+## Deploy to Cloudflare
 
-- Build command: `npm run build`
-- Output directory: `_site`
-- Root directory: repository root
-- Node version: 22 or a later supported LTS release
-- No Functions, secrets, bindings, or server runtime required
+The site deploys as a static-assets-only Cloudflare Worker, configured in `wrangler.jsonc`. Wrangler uploads `_site/`. No Worker script, secrets, or bindings are needed.
 
-This work has not been deployed. The visible independent-proposal labels and `noindex` metadata are intentional. Recheck campaign terms and content before public fundraising use.
+```sh
+npx wrangler login   # once per machine
+npm run deploy       # build, check, then wrangler deploy
+```
+
+`npm run preview` serves the built site locally through Wrangler. The visible independent-proposal labels and `noindex` metadata are intentional. Recheck campaign terms and content before public fundraising use.
 
 ## Content and campaign changes
 
