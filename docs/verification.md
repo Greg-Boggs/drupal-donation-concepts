@@ -62,3 +62,9 @@ Text-only web retrieval cannot resolve the live-versus-cached checkout wording d
 ## Design revision
 
 Preserved the three overlapping portraits beneath the hero statistic. Removed uppercase section labels, scrolling prompts, the small people tagline, collapsed content, and public variant navigation. The main CTA goes directly to the security fund. Revised the headline and introduction to credit people with finding and responding to vulnerabilities. Added all 29 active and six provisional members from the live official roster checked November 25, and replaced the invented logo with the official Association asset. The root route now renders the main campaign page.
+
+## People-page follow-up
+
+The people hero now names xjm and links directly to her Patreon, without using her image. Both campaign pages place the xjm funding story immediately after the hero, then the countdown and fund donation section, followed by the workload and evidence. The full roster is linked rather than displayed. Removed diagonal arrow decorations from all pages and replaced the hero fade with a sharp, shallow V edge. The original three overlapping portraits on the security page remain unchanged.
+
+Eight tests, build, and generated-site checks passed. At a 320 CSS pixel viewport the people page had no horizontal overflow; axe reported zero violations across WCAG 2 A/AA and 2.1 AA tags. Viewport override was reset.

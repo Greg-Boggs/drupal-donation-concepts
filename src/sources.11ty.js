@@ -13,7 +13,7 @@ export default class {
       )
         .map(
           ([id, s]) =>
-            `<article id="${id}"><h2><a href="${s.url}">${s.title} ↗</a></h2><p>${s.scope}</p><p class="fine">${s.publishedAt ? `Published ${s.publishedAt} · ` : ""}Checked ${s.verifiedAt}</p></article>`,
+            `<article id="${id}"><h2><a href="${s.url}">${s.title}</a></h2><p>${s.scope}</p><p class="fine">${s.publishedAt ? `Published ${s.publishedAt} · ` : ""}Checked ${s.verifiedAt}</p></article>`,
         )
         .join(
           "",
@@ -25,7 +25,7 @@ export default class {
         )
         .join(
           "",
-        )}</ul><h2>Typography and visual reference</h2><p>Palette and layout direction derived from new.drupal.org. Noto Sans is distributed under the <a href="/assets/fonts/OFL.txt">SIL Open Font License</a>. The original site uses ZT Gatha headings; this concept uses Noto Sans throughout. The unmodified Drupal Association logo comes from its official website. Its use here does not imply endorsement.</p><h2>What is illustrative?</h2><p>December 31, 2026 at 23:59:59 UTC is a proposed campaign deadline. No campaign total, donor count, target, matching sponsor, merchandise offer, or deadline-dependent funding outcome is claimed.</p><h2>Checkout verification</h2><p>The official security support page links to <a href="https://donorbox.org/drupal-security">the security-fund Donorbox page</a>. Its rendered description discusses support for the Security Team. Search-engine cached text still mentions Drupal 7. Confirm the final checkout wording with the Association before public campaign use. Donation processing and receipts belong to the recipient platform.</p><a class="button navy" href="/security/">Support Drupal security →</a></section>`,
+        )}</ul><h2>Typography and visual reference</h2><p>Palette and layout direction derived from new.drupal.org. Noto Sans is distributed under the <a href="/assets/fonts/OFL.txt">SIL Open Font License</a>. The original site uses ZT Gatha headings; this concept uses Noto Sans throughout. The unmodified Drupal Association logo comes from its official website. Its use here does not imply endorsement.</p><h2>What is illustrative?</h2><p>December 31, 2026 at 23:59:59 UTC is a proposed campaign deadline. No campaign total, donor count, target, matching sponsor, merchandise offer, or deadline-dependent funding outcome is claimed.</p><h2>Checkout verification</h2><p>The official security support page links to <a href="https://donorbox.org/drupal-security">the security-fund Donorbox page</a>. Its rendered description discusses support for the Security Team. Search-engine cached text still mentions Drupal 7. Confirm the final checkout wording with the Association before public campaign use. Donation processing and receipts belong to the recipient platform.</p><a class="button navy" href="/security/">Support Drupal security</a></section>`,
       "sources",
     );
   }

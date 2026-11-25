@@ -1055,9 +1055,19 @@ details > p {
   color: var(--navy);
 }
 .hero {
-  background:
-    linear-gradient(to bottom, transparent calc(100% - 55px), white),
-    linear-gradient(110deg, var(--navy) 14%, #006aa9 74%, var(--blue));
+  background: linear-gradient(
+    110deg,
+    var(--navy) 14%,
+    #006aa9 74%,
+    var(--blue)
+  );
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 24px),
+    50% 100%,
+    0 calc(100% - 24px)
+  );
   padding-top: 60px;
   padding-bottom: 110px;
 }
@@ -1140,5 +1150,37 @@ details > p {
   }
   .site-header nav {
     gap: 0;
+  }
+}
+
+/* Keep the campaign hand-off sharp, with a shallow downward point. */
+.xjm-story {
+  grid-template-columns: 1fr 1.2fr;
+  gap: 65px;
+}
+.xjm-story .lead {
+  margin-top: 0;
+}
+.team-link {
+  max-width: var(--max);
+  margin: auto;
+  padding: 0 40px 65px;
+}
+@media (max-width: 700px) {
+  .xjm-story {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .team-link {
+    padding-inline: 24px;
+  }
+  .hero {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 14px),
+      50% 100%,
+      0 calc(100% - 14px)
+    );
   }
 }

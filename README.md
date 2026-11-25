@@ -41,7 +41,7 @@ The main donation link goes to the official DA security-fund checkout. xjm's Pat
 
 ## Images and attribution
 
-The three featured photographs use original files from their official Drupal.org accounts. No image of xjm is used. All active and provisional members are named in a visible roster, checked November 25, 2026. The header uses the official Drupal Association logo. Source URLs and reuse notes are recorded in `src/content/portrait-provenance.json`. Credits and licensing links appear on `/sources/`. Noto Sans font files include their SIL Open Font License. Temporal's locally served fallback includes its MIT license.
+The three featured photographs use original files from their official Drupal.org accounts. No image of xjm is used. The official full team roster is linked from both campaign pages. The header uses the official Drupal Association logo. Source URLs and reuse notes are recorded in `src/content/portrait-provenance.json`. Credits and licensing links appear on `/sources/`. Noto Sans font files include their SIL Open Font License. Temporal's locally served fallback includes its MIT license.
 
 The illustration of a droplet is an original geometric drawing. Drupal is a trademark of Dries Buytaert. These pages do not imply endorsement by the Association or the people featured.
 
