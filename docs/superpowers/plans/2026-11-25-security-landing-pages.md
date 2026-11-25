@@ -52,14 +52,14 @@
 
 **Interfaces:** Content exports named `sources`, `metrics`, `monthlyAdvisories`, `people`, and `campaign`. Source records have `id`, `url`, `publishedAt`, `verifiedAt`, and `scope`. Person records have `id`, `name`, `handle`, `role`, `profileUrl`, `workSourceIds`, optional `portrait`, and optional `supportUrl`. Portrait records include local path, source URL, credit, reuse basis, width, height, and alt text. Unavailable portraits have a recorded reason, not a fictitious replacement.
 
-- [ ] Inspect current brand typography/colors and public asset terms on new.drupal.org. Inspect official profiles and linked portrait licenses for xjm, Drew Webber, Greg Knaddison, and Michael Hess. Record actual values and findings.
-- [ ] Verify the DA security-support page links to the chosen checkout. Compare its current rendered text to cached Drupal 7 text. Record any unresolved discrepancy. Check xjm's Patreon destination and November sponsor announcement without submitting forms.
-- [ ] Write `tests/site.test.js` assertions that all used source IDs resolve, security totals carry the June through October 2026 period, historical hours carry October attribution and a November sponsor source, and person text does not require a portrait.
-- [ ] Run `node --test tests/site.test.js`. Expect failure because shared content modules do not yet exist.
-- [ ] Create the shared content and provenance records. Use 256 total, 223 participating, and selected months June 28, September 74, October 106. Do not fill missing months. Put long source excerpts outside product copy; paraphrase and link.
-- [ ] Add Eleventy 3 with a lockfile, `build`, `dev`, `test`, and `check` scripts. Pin the resolved dependency version. Create the review index and base layout with language, unique titles, skip link, and independent-proposal notice.
-- [ ] Run `npm test` and `npm run build`. Expect passing data checks and `_site/index.html` with working route links once all routes are built. Until Task 3, route placeholders are explicitly unfinished local development pages.
-- [ ] Commit the static foundation and verified content.
+- [x] Inspect current brand typography/colors and public asset terms on new.drupal.org. Inspect official profiles and linked portrait licenses for xjm, Drew Webber, Greg Knaddison, and Michael Hess. Record actual values and findings.
+- [x] Verify the DA security-support page links to the chosen checkout. Compare its current rendered text to cached Drupal 7 text. Record any unresolved discrepancy. Check xjm's Patreon destination and November sponsor announcement without submitting forms.
+- [x] Write `tests/site.test.js` assertions that all used source IDs resolve, security totals carry the June through October 2026 period, historical hours carry October attribution and a November sponsor source, and person text does not require a portrait.
+- [x] Run `node --test tests/site.test.js`. Expect failure because shared content modules do not yet exist.
+- [x] Create the shared content and provenance records. Use 256 total, 223 participating, and selected months June 28, September 74, October 106. Do not fill missing months. Put long source excerpts outside product copy; paraphrase and link.
+- [x] Add Eleventy 3 with a lockfile, `build`, `dev`, `test`, and `check` scripts. Pin the resolved dependency version. Create the review index and base layout with language, unique titles, skip link, and independent-proposal notice.
+- [x] Run `npm test` and `npm run build`. Expect passing data checks and `_site/index.html` with working route links once all routes are built. Until Task 3, route placeholders are explicitly unfinished local development pages.
+- [x] Commit the static foundation and verified content.
 
 ## Task 2: Implement campaign validation and countdown behavior
 
@@ -67,14 +67,14 @@
 
 **Interfaces:** `validateCampaign(config)` returns valid config or throws a descriptive error. `campaignState(config, nowEpochMs)` returns `{expired, remainingSeconds, deadlineISO}`. Both build rendering and browser code consume the same functions. Enabled progress requires `{goal, current, units, sourceUrl, updatedAt}`; goal is positive, current is nonnegative, values finite, units are `donors` or `USD`, URL is HTTPS, and timestamp includes an offset. The default progress is disabled. `renderDonation(campaign, nowEpochMs)` produces HTML with a marked countdown, readable deadline, recipient, and a neutral support link.
 
-- [ ] Write tests for deadline `2026-12-31T23:59:59Z`: at 1 second before return 1 second and active, at deadline return 0 and expired, afterward remain expired. Assert invalid/offset-free dates throw, counts never become negative, and repeated calls with the same time yield the same state.
-- [ ] Test enabled progress with each missing field, nonfinite/negative values, zero goal, invalid URL, and invalid date. Assert rejection. Test disabled progress renders no implied count or goal.
-- [ ] Test `renderDonation` with an expired clock: no 'give before' appeal or running countdown, an expired notice and ongoing-support link remain. Test the active output includes the full UTC deadline and visible proposed-campaign label.
-- [ ] Run `node --test tests/campaign.test.js`. Expect failure until the implementation exists.
-- [ ] Implement validation, state, donation HTML, and browser enhancement. Follow retrieved Temporal guidance with a local conditional polyfill if needed; preserve a native HTML deadline if enhancement cannot load. Recompute from the fixed instant every second, not from decremented local storage or visit time. Keep per-second updates out of live announcements; announce expiry once. Replace deadline-based text on expiry without moving focus.
-- [ ] Ensure the static HTML uses the generation clock for an already-expired build. For previously generated HTML viewed later without JavaScript, retain only evergreen donation wording around the absolute deadline; do not make an active temporal promise that can become false.
-- [ ] Run `node --test tests/campaign.test.js`. Expect all boundary, invalid-input, progress, and expiry cases to pass.
-- [ ] Commit campaign behavior.
+- [x] Write tests for deadline `2026-12-31T23:59:59Z`: at 1 second before return 1 second and active, at deadline return 0 and expired, afterward remain expired. Assert invalid/offset-free dates throw, counts never become negative, and repeated calls with the same time yield the same state.
+- [x] Test enabled progress with each missing field, nonfinite/negative values, zero goal, invalid URL, and invalid date. Assert rejection. Test disabled progress renders no implied count or goal.
+- [x] Test `renderDonation` with an expired clock: no 'give before' appeal or running countdown, an expired notice and ongoing-support link remain. Test the active output includes the full UTC deadline and visible proposed-campaign label.
+- [x] Run `node --test tests/campaign.test.js`. Expect failure until the implementation exists.
+- [x] Implement validation, state, donation HTML, and browser enhancement. Follow retrieved Temporal guidance with a local conditional polyfill if needed; preserve a native HTML deadline if enhancement cannot load. Recompute from the fixed instant every second, not from decremented local storage or visit time. Keep per-second updates out of live announcements; announce expiry once. Replace deadline-based text on expiry without moving focus.
+- [x] Ensure the static HTML uses the generation clock for an already-expired build. For previously generated HTML viewed later without JavaScript, retain only evergreen donation wording around the absolute deadline; do not make an active temporal promise that can become false.
+- [x] Run `node --test tests/campaign.test.js`. Expect all boundary, invalid-input, progress, and expiry cases to pass.
+- [x] Commit campaign behavior.
 
 ## Task 3: Build both complete campaign pages and verify delivery
 
@@ -82,17 +82,17 @@
 
 **Interfaces:** Page templates consume Task 1 content and Task 2 donation rendering. `renderEvidence(metrics, monthlyAdvisories, sources)` includes labelled zero-baseline bars and an equivalent HTML table. `renderPeople(people, sources)` preserves names and official links when portraits are absent. Pages identify their variant through a stable body data attribute. `check-site.js` checks built internal links/fragments, required local assets, source references, and identical shared deadline/recipient configuration across both campaign pages.
 
-- [ ] Extend output checks for both variants, missing local assets, unresolved source IDs, broken fragments, differing deadlines/recipients, portrait-independent names, and historical funding attribution. Use a deliberately broken fixture to establish that link checking catches failures.
-- [ ] Run the added tests before implementation. Expect failure for incomplete campaign pages and output checks.
-- [ ] Build the shared Drupal visual system from inspected reference styles. Make the evidence-first and people-first heroes distinct. Compose the agreed narrative, real-member profiles with xjm prominent, sourced results, repeated primary donation links, separate direct sponsorship section, native FAQ disclosures, sources page, and review index.
-- [ ] Supply all available verified portraits locally with dimensions and credits. Any unavailable portrait remains a documented exception with a truthful text profile and official photo link. Check that logo and font reuse terms are recorded before copying. Avoid CSS that depends on portraits loading.
-- [ ] Add native semantic landmarks and headings, visible keyboard focus, accessible chart labels/table, compact citations, responsive layouts down to 320 CSS pixels, and reduced-motion support. Avoid sticky elements that hide reading content or focus targets.
-- [ ] Run `npm test`, `npm run build`, and `npm run check`. Expect all checks passing, all four output routes present, and no broken internal targets or missing local assets.
-- [ ] Serve and inspect both campaign pages at desktop and mobile widths. Verify tab order, skip link, FAQs, portrait identity/cropping, chart readability, contrast, donation recipient labels, 200% zoom, JavaScript-disabled content, countdown tick and expiry. Use documented browser capabilities; report any check the available browser cannot perform.
-- [ ] Run available automated accessibility checks and fix actionable issues. Do not claim full accessibility from automated scores.
-- [ ] Write `README.md` with install/dev/build commands and Cloudflare Pages settings. Document that progress, funding target, and real deadline terms remain unconfirmed. Record source and portrait limitations, verification commands/results, and browser findings in `docs/verification.md`.
-- [ ] Commit the complete site, obtain whole-change review, address supported findings, and rerun checks affected by fixes.
-- [ ] Present both local page URLs and a visual preview. Leave deployment for later authorization.
+- [x] Extend output checks for both variants, missing local assets, unresolved source IDs, broken fragments, differing deadlines/recipients, portrait-independent names, and historical funding attribution. Use a deliberately broken fixture to establish that link checking catches failures.
+- [x] Run the added tests before implementation. Expect failure for incomplete campaign pages and output checks.
+- [x] Build the shared Drupal visual system from inspected reference styles. Make the evidence-first and people-first heroes distinct. Compose the agreed narrative, real-member profiles with xjm prominent, sourced results, repeated primary donation links, separate direct sponsorship section, native FAQ disclosures, sources page, and review index.
+- [x] Supply all available verified portraits locally with dimensions and credits. Any unavailable portrait remains a documented exception with a truthful text profile and official photo link. Check that logo and font reuse terms are recorded before copying. Avoid CSS that depends on portraits loading.
+- [x] Add native semantic landmarks and headings, visible keyboard focus, accessible chart labels/table, compact citations, responsive layouts down to 320 CSS pixels, and reduced-motion support. Avoid sticky elements that hide reading content or focus targets.
+- [x] Run `npm test`, `npm run build`, and `npm run check`. Expect all checks passing, all four output routes present, and no broken internal targets or missing local assets.
+- [x] Serve and inspect both campaign pages at desktop and mobile widths. Verify tab order, skip link, FAQs, portrait identity/cropping, chart readability, contrast, donation recipient labels, 200% zoom, JavaScript-disabled content, countdown tick and expiry. Use documented browser capabilities; report any check the available browser cannot perform.
+- [x] Run available automated accessibility checks and fix actionable issues. Do not claim full accessibility from automated scores.
+- [x] Write `README.md` with install/dev/build commands and Cloudflare Pages settings. Document that progress, funding target, and real deadline terms remain unconfirmed. Record source and portrait limitations, verification commands/results, and browser findings in `docs/verification.md`.
+- [x] Commit the complete site, obtain whole-change review, address supported findings, and rerun checks affected by fixes.
+- [x] Present both local page URLs and a visual preview. Leave deployment for later authorization.
 
 ## Plan self-review
 
@@ -102,5 +102,7 @@ The three tasks cover shared evidence, real members and image provenance, campai
 
 - [x] Design approved.
 - [x] Implementation plan written and self-reviewed.
-- [ ] User reviews plan and chooses native or subagent-driven execution.
-- [ ] Execute tasks and whole-change review.
+- [x] User reviews plan and chooses native or subagent-driven execution.
+- [x] Execute tasks and whole-change review.
+
+Completed November 25, 2026. Native execution, eight behavior tests, four generated routes, browser checks, independent review, and the mobile-heading fix are recorded in `docs/verification.md`. The real campaign offer remains unconfirmed as designed.

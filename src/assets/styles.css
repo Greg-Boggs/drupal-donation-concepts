@@ -919,11 +919,6 @@ details > p {
     grid-template-columns: 1fr;
     gap: 28px;
   }
-  .section-heading h2 br,
-  .workload h2 br,
-  .risk h2 br {
-    display: none;
-  }
   .lead {
     font-size: 1.1rem;
   }

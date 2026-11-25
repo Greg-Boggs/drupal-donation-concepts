@@ -43,4 +43,18 @@ No conversion improvement has been measured. There is no checkout reporting inte
 - `docs/previews/evidence-desktop.png`
 - `docs/previews/people-desktop.png`
 
-Final independent review findings and fixes will be recorded below.
+## Independent review
+
+A fresh reviewer checked the implementation against the approved design and plan, reran the eight tests and generated-site check, and found no critical issue.
+
+The reviewer found one important mobile defect. Hiding section-heading line breaks joined adjacent words. A browser check at 320 CSS pixels reproduced three joined phrases. Retaining the line breaks removed all three on both pages, with no horizontal overflow. The full eight-test suite, build, and link check passed afterward.
+
+One minor maintenance issue remains deferred. The readable date in `src/components/donation.js` is fixed to the approved December 31, 2026 deadline. The `datetime` and running countdown use campaign configuration. If the deadline changes, update the readable date and the corresponding FAQ copy together. Deriving all deadline prose from configuration is a future improvement.
+
+## Execution decisions
+
+The implementation reused the clean checkout on branch `bot/security-landing-pages`, rather than creating another worktree. Concurrent work is therefore not isolated into another directory.
+
+Payment completion, public campaign authorization, conversion performance, and real funding commitments remain outside this local-concept delivery. The consequence is that this work does not establish real donation conversion or an approved public offer.
+
+Text-only web retrieval cannot resolve the live-versus-cached checkout wording discrepancy. The site records it rather than treating cached Drupal 7 wording as current campaign terms. Reconfirmation with the Association is still needed before adoption.
