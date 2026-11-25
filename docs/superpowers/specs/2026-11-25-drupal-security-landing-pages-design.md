@@ -1,7 +1,7 @@
 # Drupal security fundraising landing pages
 
 Date: 2026-11-25
-Status: Draft for user approval. Product implementation has not started.
+Status: Approved by the user on 2026-11-25. Product implementation has not started.
 
 ## Intent
 
@@ -120,4 +120,5 @@ Unconfirmed campaign target, current totals, budget allocation, and deadline con
 - Research and visual directions reviewed with the user.
 - User chose both directions and new.drupal.org styling.
 - Written design drafted. A fresh frontend builder reviewed the document and reported 'nothing important left'.
-- Next: obtain design approval, then invoke Superpowers writing-plans.
+- User approved the design on 2026-11-25.
+- Next: review the implementation plan and choose the execution method.
