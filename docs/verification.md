@@ -72,3 +72,11 @@ Eight tests, build, and generated-site checks passed. At a 320 CSS pixel viewpor
 ### Campaign-recipient correction
 
 The people page’s header and hero donation actions both lead to the Drupal Association security fund. xjm remains named in the hero and her funding section stays directly below it. Her Patreon is a separate, secondary support option in that section. This corrects the previous revision’s mistaken shift of the primary recipient. Eight tests, build, and site checks passed after restoring the fund CTA.
+
+## Three-version revision
+
+Added `/deadline/` with the timer first in the hero, plus a top demo navigation bar linking all three variants and identifying the current page. On `/security/`, moved the chart-first evidence section below the hero, followed by the donation/timer panel, then xjm. The people hero retains its three photos and text-only xjm release-manager tile. Alternating full-width dark, white, and pale sections break up the page. The team link now has a normal heading, supporting text, and button in its own section.
+
+Removed the fund-terms link, checkout handoff sentence, and redundant deadline label from the donation panel. Browser-local formatting displayed December 31, 2026 at 3:59:59 PM PST for the unchanged UTC instant. Removed the boss pitch and linked the Association newsletter signup instead. The deadline variant labels that link “Get updates on the deadline”; this remains a general-newsletter destination pending dedicated campaign signup.
+
+Eight tests passed; build and site checks verified five routes and twelve assets. The deadline page passed the automated WCAG 2 A/AA and 2.1 AA audit with zero violations and 22 passing groups. Its 320 CSS pixel viewport had no horizontal overflow. Both countdowns render in the deadline variant; viewport overrides were reset.

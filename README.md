@@ -33,16 +33,18 @@ This work has not been deployed. The visible independent-proposal labels and `no
 
 ## Content and campaign changes
 
-Shared source records, metrics, people, and campaign configuration are in `src/content/`. Components are in `src/components/`. Page composition is in the four `.11ty.js` route files. Styles are local, and the only browser script updates countdowns.
+Shared source records, metrics, people, and campaign configuration are in `src/content/`. Components are in `src/components/`. Page composition is in the five `.11ty.js` route files. Styles are local, and the only browser script updates countdowns.
 
 The proposed deadline is December 31, 2026 at 23:59:59 UTC. It is not an Association commitment or a security release forecast. No donor total, goal, matching gift, shirt offer, or conditional funding outcome has been invented. Progress remains disabled. Enabling it requires a positive goal, nonnegative current total, units, an HTTPS source, and a timestamp with a timezone.
 
-The main donation link goes to the official DA security-fund checkout. xjm's Patreon is separately labelled as direct maintainer support. Neither page takes payment or collects personal data. No analytics or tracking pixels are included.
+The main donation link goes to the official DA security-fund checkout. xjm's Patreon is separately labelled as direct maintainer support. None of the pages take payment or collects personal data. No analytics or tracking pixels are included.
 
 ## Images and attribution
 
-The three featured photographs use original files from their official Drupal.org accounts. No image of xjm is used. The official full team roster is linked from both campaign pages. The header uses the official Drupal Association logo. Source URLs and reuse notes are recorded in `src/content/portrait-provenance.json`. Credits and licensing links appear on `/sources/`. Noto Sans font files include their SIL Open Font License. Temporal's locally served fallback includes its MIT license.
+The three featured photographs use original files from their official Drupal.org accounts. No image of xjm is used. The official full team roster is linked from all three campaign pages. The header uses the official Drupal Association logo. Source URLs and reuse notes are recorded in `src/content/portrait-provenance.json`. Credits and licensing links appear on `/sources/`. Noto Sans font files include their SIL Open Font License. Temporal's locally served fallback includes its MIT license.
 
-The illustration of a droplet is an original geometric drawing. Drupal is a trademark of Dries Buytaert. These pages do not imply endorsement by the Association or the people featured.
+Drupal is a trademark of Dries Buytaert. These pages do not imply endorsement by the Association or the people featured.
 
 See `docs/verification.md` for test results, browser checks, and remaining limits.
+
+The demo bar links `/security/`, `/people/`, and `/deadline/`. The deadline variant leads with the countdown; the security variant leads with chart evidence, then the donation/timer panel and xjm story. Dates are localized in the browser without changing the campaign instant. Email-update links currently use the Association’s general newsletter signup as a placeholder for campaign-specific subscriptions.

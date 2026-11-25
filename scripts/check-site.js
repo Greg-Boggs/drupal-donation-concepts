@@ -48,10 +48,11 @@ async function check() {
     "/index.html",
     "/security/index.html",
     "/people/index.html",
+    "/deadline/index.html",
     "/sources/index.html",
   ])
     if (!pages.has(route)) errors.push(`Missing route ${route}`);
-  for (const route of ["/security/index.html", "/people/index.html"]) {
+  for (const route of ["/security/index.html", "/people/index.html", "/deadline/index.html"]) {
     const html = pages.get(route) || "";
     if (
       !html.includes("2026-12-31T23:59:59Z") ||

@@ -1,4 +1,18 @@
 import { campaignState } from "/lib/campaign.js";
+for (const element of document.querySelectorAll("[data-local-deadline]")) {
+  const deadline = new Date(element.dateTime);
+  if (!Number.isNaN(deadline.getTime())) {
+    element.textContent = new Intl.DateTimeFormat(undefined, {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "numeric",
+      minute: "2-digit",
+      second: "2-digit",
+      timeZoneName: "short",
+    }).format(deadline);
+  }
+}
 async function start() {
   let TemporalAPI = globalThis.Temporal;
   if (!TemporalAPI) {
